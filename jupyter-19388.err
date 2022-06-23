@@ -1,0 +1,187 @@
+[W 2022-06-23 13:27:26.670 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-06-23 13:27:26.670 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-06-23 13:27:26.670 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-06-23 13:27:26.670 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-06-23 13:27:26.673 LabApp] JupyterLab extension loaded from /home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jupyterlab
+[I 2022-06-23 13:27:26.673 LabApp] JupyterLab application directory is /home/fs02/pmr82_0001/ah986/rival_framings/share/jupyter/lab
+[I 13:27:26.677 NotebookApp] Serving notebooks from local directory: /home/fs02/pmr82_0001/ah986/drought_classification
+[I 13:27:26.677 NotebookApp] Jupyter Notebook 6.4.5 is running at:
+[I 13:27:26.677 NotebookApp] http://localhost:18426/?token=384c621b8b6215a2b851ddcfc3fbe7d6424463022cb2da5f
+[I 13:27:26.677 NotebookApp]  or http://127.0.0.1:18426/?token=384c621b8b6215a2b851ddcfc3fbe7d6424463022cb2da5f
+[I 13:27:26.677 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:27:26.682 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/fs02/pmr82_0001/ah986/.local/share/jupyter/runtime/nbserver-1507388-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:18426/?token=384c621b8b6215a2b851ddcfc3fbe7d6424463022cb2da5f
+     or http://127.0.0.1:18426/?token=384c621b8b6215a2b851ddcfc3fbe7d6424463022cb2da5f
+[I 13:28:00.559 NotebookApp] 302 GET /?token=384c621b8b6215a2b851ddcfc3fbe7d6424463022cb2da5f (::1) 0.270000ms
+[I 13:28:17.381 NotebookApp] Creating new notebook in 
+[W 13:28:18.576 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220623132725 (::1) 14.200000ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 13:28:18.579 NotebookApp] Kernel started: f53410dd-f321-42ed-b079-a06db5ea3691, name: python3
+Exception in callback <TaskStepMethWrapper object at 0x15042085aa90>()
+handle: <Handle <TaskStepMethWrapper object at 0x15042085aa90>()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+[I 13:30:18.582 NotebookApp] Saving file at /drought_impacts.ipynb
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/kernelbase.py", line 261, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/kernelbase.py", line 579, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/ipkernel.py", line 356, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/ipkernel.py", line 381, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 484, in rectify_completions
+    completions = list(completions)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1818, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1862, in _completions
+    full_text=full_text, cursor_line=cursor_line, cursor_pos=cursor_column)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 2030, in _complete
+    cursor_pos, cursor_line, full_text)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1374, in _jedi_matches
+    text[:offset], namespaces, column=cursor_column, line=cursor_line + 1)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jedi/api/__init__.py", line 726, in __init__
+    project=Project(Path.cwd()), **kwds)
+TypeError: __init__() got an unexpected keyword argument 'column'
+[I 13:34:18.591 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 13:36:26.706 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 13:42:18.607 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 13:46:20.207 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 13:48:18.552 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 13:50:18.554 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 13:52:18.578 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 13:54:18.548 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 13:56:20.062 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 13:58:19.292 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:00:18.538 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:02:18.550 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:04:18.541 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:06:19.370 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:14:18.582 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:16:18.531 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:18:18.527 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:20:18.524 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:22:18.557 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:24:03.093 NotebookApp] Kernel interrupted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 14:24:08.551 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:24:08.655 NotebookApp] Starting buffering for f53410dd-f321-42ed-b079-a06db5ea3691:6f034bf72d3c463e81733f83211b3ca6
+[W 14:24:08.930 NotebookApp] Notebook drought_impacts.ipynb is not trusted
+[W 14:24:08.954 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220623132725 (::1) 2.280000ms referer=http://localhost:8888/notebooks/drought_impacts.ipynb
+[I 14:25:05.948 NotebookApp] Starting buffering for f53410dd-f321-42ed-b079-a06db5ea3691:bd20f73869fd455e81894d33c2a6823c
+[W 14:25:09.071 NotebookApp] Notebook drought_impacts.ipynb is not trusted
+[W 14:25:09.094 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220623132725 (::1) 2.300000ms referer=http://localhost:8888/notebooks/drought_impacts.ipynb
+[I 14:25:46.585 NotebookApp] Starting buffering for f53410dd-f321-42ed-b079-a06db5ea3691:1088fd35f0804198a38a547b9b19a0bd
+[W 14:26:01.587 NotebookApp] Notebook drought_impacts.ipynb is not trusted
+[W 14:26:01.609 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220623132725 (::1) 2.110000ms referer=http://localhost:8888/notebooks/drought_impacts.ipynb
+[I 14:26:12.859 NotebookApp] Starting buffering for f53410dd-f321-42ed-b079-a06db5ea3691:ca9351b71d6b43c78d196518804165cf
+[I 14:26:18.626 NotebookApp] Kernel restarted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 14:26:18.706 NotebookApp] Restoring connection for f53410dd-f321-42ed-b079-a06db5ea3691:ca9351b71d6b43c78d196518804165cf
+[I 14:27:38.780 NotebookApp] Kernel interrupted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 14:27:44.329 NotebookApp] Starting buffering for f53410dd-f321-42ed-b079-a06db5ea3691:ca9351b71d6b43c78d196518804165cf
+[I 14:27:49.051 NotebookApp] Kernel restarted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 14:27:49.133 NotebookApp] Restoring connection for f53410dd-f321-42ed-b079-a06db5ea3691:ca9351b71d6b43c78d196518804165cf
+[I 14:28:01.756 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:30:01.775 NotebookApp] Saving file at /drought_impacts.ipynb
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/kernelbase.py", line 261, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/kernelbase.py", line 579, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/ipkernel.py", line 356, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/ipkernel.py", line 381, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 484, in rectify_completions
+    completions = list(completions)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1818, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1862, in _completions
+    full_text=full_text, cursor_line=cursor_line, cursor_pos=cursor_column)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 2030, in _complete
+    cursor_pos, cursor_line, full_text)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1374, in _jedi_matches
+    text[:offset], namespaces, column=cursor_column, line=cursor_line + 1)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jedi/api/__init__.py", line 726, in __init__
+    project=Project(Path.cwd()), **kwds)
+TypeError: __init__() got an unexpected keyword argument 'column'
+[I 14:32:01.762 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:34:01.759 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:36:01.758 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:40:01.750 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:42:01.750 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 14:58:01.766 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:00:02.486 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:02:01.731 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:04:01.729 NotebookApp] Saving file at /drought_impacts.ipynb
+[W 15:05:54.945 NotebookApp] Notebook drought_impacts.ipynb is not trusted
+[W 15:05:54.952 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220623132725 (::1) 1.690000ms referer=http://localhost:8888/notebooks/drought_impacts.ipynb
+[I 15:08:01.729 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:10:01.724 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:12:01.748 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:14:01.726 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:14:37.053 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+kernel f53410dd-f321-42ed-b079-a06db5ea3691 restarted
+[I 15:16:01.715 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:18:01.721 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:20:01.715 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:22:01.766 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:24:01.711 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:26:01.713 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:28:01.710 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:30:01.709 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:32:01.705 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:34:01.708 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:36:01.704 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:38:01.701 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:40:01.705 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:42:03.918 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:48:01.744 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:50:01.694 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:56:01.714 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 15:58:01.686 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:02:02.494 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:04:02.260 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:06:01.685 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:08:01.675 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:10:04.495 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:14:06.170 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:16:01.675 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:18:01.673 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:20:01.665 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:22:01.677 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:22:32.284 NotebookApp] Kernel interrupted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 16:22:44.505 NotebookApp] Kernel interrupted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 16:23:10.882 NotebookApp] Kernel interrupted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 16:24:01.673 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:26:01.669 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:27:22.850 NotebookApp] Kernel interrupted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 16:27:42.026 NotebookApp] Kernel interrupted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 16:28:01.431 NotebookApp] Kernel interrupted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 16:28:01.663 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:28:15.673 NotebookApp] Kernel interrupted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 16:28:50.338 NotebookApp] Kernel interrupted: f53410dd-f321-42ed-b079-a06db5ea3691
+[I 16:30:02.292 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:32:01.659 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:33:00.547 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:34:01.664 NotebookApp] Saving file at /drought_impacts.ipynb
+[I 16:36:01.659 NotebookApp] Saving file at /drought_impacts.ipynb
