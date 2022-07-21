@@ -1,134 +1,6 @@
-import numpy as np
-import math
 import pandas as pd
-from matplotlib import pyplot as plt
 from scipy.stats import genextreme as gev
-
-def drought_counts(timeseries, drought_threshold, decadal_window=11, multidecadal_window=35):
-    drought_windows = [multidecadal_window, decadal_window]
-    all_years = len(timeseries)
-
-    # Create list to store drought totals
-    all_drought_years = []
-
-    for w in range(len(drought_windows)):
-        window_size = drought_windows[w]
-        # Calculate rolling means for each drought window
-        i = 0
-        # Initialize an empty list to store moving averages
-        moving_averages = []
-
-        # Loop through the array to consider
-        # every window of size 3
-        while i < len(timeseries) - window_size + 1:
-            # Store elements from i to i+window_size
-            # in list to get the current window
-            window = timeseries[i: i + window_size]
-            # Calculate the average of current window
-            window_average = round(sum(window) / window_size, 2)
-            # Store the average of current
-            # window in moving average list
-            moving_averages.append(window_average)
-            # Shift window to right by one position
-            i += 1
-
-        # Plot results
-        half_window = math.floor(window_size / 2)
-
-        highlight_years = np.arange(half_window, all_years - half_window)[moving_averages < drought_threshold]
-        all_drought_years_in_window = []
-        for year in highlight_years:
-            first_year = year - half_window
-            last_year = year + half_window
-            all_drought_years_in_window.extend(np.arange(first_year, last_year + 1))
-
-        all_drought_years.append(set(all_drought_years_in_window))
-    # lenght of multidecadal set and then length of decadal set
-    total_drought_years = [len(years_list) for years_list in all_drought_years]
-    return (total_drought_years)
-
-def drought_identification_plots(timeseries, drought_threshold, decadal_window=11, multidecadal_window=35):
-    drought_windows = [multidecadal_window, decadal_window]
-    drought_colors = ['#CA6702', '#EE9B00']
-    all_years = len(timeseries)
-
-    fig = plt.figure(figsize=(16, 9))
-    # parameters to specify the width and height ratios between rows and columns
-    widths = [1]
-    heights = [5, 1]
-
-    gspec = fig.add_gridspec(ncols=1, nrows=2, width_ratios=widths, height_ratios=heights)
-    ax = fig.add_subplot(gspec[0, 0])
-    ax.plot(np.arange(all_years), timeseries, linewidth=3, color='#001219')
-    ax.hlines(y=mean_flow, xmin=0, xmax=len(timeseries), linewidth=2, color='#005F73', label='Mean')
-    ax.hlines(y=drought_threshold, xmin=0, xmax=len(timeseries), linewidth=2,
-              linestyle='--', color='#005F73', label='Drought threshold')
-
-    # Create list to store drought totals
-    all_drought_years = []
-
-    for w in range(len(drought_windows)):
-        window_size = drought_windows[w]
-        # Calculate rolling means for each drought window
-        i = 0
-        # Initialize an empty list to store moving averages
-        moving_averages = []
-
-        # Loop through the array to consider
-        # every window of size 3
-        while i < len(timeseries) - window_size + 1:
-            # Store elements from i to i+window_size
-            # in list to get the current window
-            window = timeseries[i: i + window_size]
-
-            # Calculate the average of current window
-            window_average = round(sum(window) / window_size, 2)
-
-            # Store the average of current
-            # window in moving average list
-            moving_averages.append(window_average)
-
-            # Shift window to right by one position
-            i += 1
-
-        # Plot results
-        half_window = math.floor(window_size / 2)
-
-        highlight_years = np.arange(half_window, all_years - half_window)[moving_averages < drought_threshold]
-        all_drought_years_in_window = []
-        for year in highlight_years:
-            first_year = year - half_window
-            last_year = year + half_window
-            # the window to highlight is +/- 5 years from the identified year crossing the threshold
-            ax.axvspan(first_year, last_year, color=drought_colors[w])
-            #         ax.plot(np.arange(half_window, all_years-half_window),
-            #                 moving_averages, linewidth=3, color='grey', label=f'{window_size}-yr mean')
-            all_drought_years_in_window.extend(np.arange(first_year, last_year + 1))
-
-        all_drought_years.append(set(all_drought_years_in_window))
-    # remove decadal drought years that also appear in multidecadal
-    all_drought_years[1] = set(all_drought_years[1]) - set(all_drought_years[0])
-    # lenght of multidecadal set and then length of decadal set
-    total_drought_years = [len(years_list) for years_list in all_drought_years]
-    ax.tick_params(axis='both', labelsize=14)
-    ax.set_ylabel("Annual flow (Million $m^3$)", fontsize=16)
-    ax.set_xlabel("Year in realization", fontsize=16)
-    ax.legend(fontsize=16, loc='upper right')
-
-    ax2 = fig.add_subplot(gspec[1, :])
-    # plot decadal first and then multidecadal
-    ax2.barh(1, total_drought_years[1], color='#EE9B00')
-    ax2.barh(1, total_drought_years[0], left=total_drought_years[1], color='#CA6702')
-
-    ax2.spines['right'].set_visible(False)
-    ax2.spines['left'].set_visible(False)
-    ax2.spines['top'].set_visible(False)
-    ax2.set_yticks([])
-    ax2.tick_params(axis='x', labelsize=14)
-    ax2.set_xlabel("Total years in drought", fontsize=16)
-    ax2.set_xlim(ax.get_xlim())
-    plt.show()
-    return (total_drought_years)
+from utils import *
 
 
 # load paleo data at Cisco
@@ -146,23 +18,77 @@ mean_flow = np.mean(annual_historic_flows)
 st_deviation = np.std(annual_historic_flows)
 drought_threshold = mean_flow-0.5*st_deviation
 
-drought_identification_plots(Paleo['ScaledReconCisco'][:429], drought_threshold)
+# Droughts under historical observations and under paleo reconstruction
+drought_identification_plots(Paleo['ScaledReconCisco'][:429], mean_flow, drought_threshold)
+drought_identification_plots(annual_historic_flows, mean_flow, drought_threshold)
 
-# Repeat for synthetically generated flows
+# Repeat for synthetically generated flows (internal variability of history)
+stationary_flows = np.load('./data/stationarysynthetic_flows.npy')*1233.4818/1000000
+annual_stationary_flows = np.sum(stationary_flows, axis=2)
+annual_stationary_flows_flat = annual_stationary_flows.flatten()
+drought_counts(annual_stationary_flows_flat, drought_threshold, decadal_window=11, multidecadal_window=35)
+drought_identification_plots(annual_stationary_flows_flat, mean_flow, drought_threshold)
+
+# Repeat for synthetically generated flows (internal variability of paleo)
 paleo_flows = np.load('./data/Paleo_SOWs_flows.npy')
 paleo_flows_annual = np.sum(paleo_flows, axis=2)*1233.4818/1000000
+# Flatten every 10 realizations
+paleo_flows_annual_flat = paleo_flows_annual[0*10:0*10+10].flatten()
+for i in range(1, 366):
+    paleo_flows_annual_flat = np.vstack((paleo_flows_annual_flat, paleo_flows_annual[i*10:i*10+10].flatten()))
 
 multi_numbers = []
 decadal_numbers = []
-for j in range(len(paleo_flows_annual[:,0])):
-    [multi, decadal] = drought_counts(paleo_flows_annual[j,:], drought_threshold, decadal_window=11, multidecadal_window=35)
+for j in range(len(paleo_flows_annual_flat[:,0])):
+    [multi, decadal] = drought_counts(paleo_flows_annual_flat[j,:], drought_threshold, decadal_window=11, multidecadal_window=35)
     multi_numbers.append(multi)
     decadal_numbers.append(decadal)
 
-zero_droughts=[i for i, e in enumerate(decadal_numbers) if e == 0]
+
+
+# Repeat for all encompassing sample
+generated_flows_wider = np.load('./data/LHsamples_wider_100_AnnQonly_flows.npy')
+all_annual_experiment_flows = np.sum(generated_flows_wider, axis=2)*1233.4818/1000000
+# Flatten every 10 realizations
+all_annual_experiment_flat = all_annual_experiment_flows[0*10:0*10+10].flatten()
+for i in range(1, 100):
+    all_annual_experiment_flat = np.vstack((all_annual_experiment_flat, all_annual_experiment_flows[i*10:i*10+10].flatten()))
+
+multi_numbers = []
+decadal_numbers = []
+for j in range(len(all_annual_experiment_flat[:,0])):
+    [multi, decadal] = drought_counts(all_annual_experiment_flat[j,:], drought_threshold, decadal_window=11, multidecadal_window=35)
+    multi_numbers.append(multi)
+    decadal_numbers.append(decadal)
+
+# Summarize impacts in bar chart
+# Order is: History, Paleo, Synthetic History, Synthetic Paleo, All-encompassing
+decadal_means, multi_means = (21, 12, 46, 26, 57), (0, 0, 20, 5, 51)
+decadal_ranges = [[0, 0, 0, 21, 57],
+                  [0, 0, 0, 31, 43]]
+multi_ranges = [[0, 0, 0, 5, 51],
+                [0, 0, 0, 37, 49]]
+
+ind = np.arange(len(decadal_means))  # the x locations for the groups
+width = 0.35  # the width of the bars
+
+fig, ax = plt.subplots(figsize=(9,6))
+rects1 = ax.bar(ind - width/2, decadal_means, width, yerr=decadal_ranges,
+                label='Decadal')
+rects2 = ax.bar(ind + width/2, multi_means, width, yerr=multi_ranges,
+                label='Multidecadal')
+
+ax.set_ylabel('# of years in each\n drought per century', fontsize=16)
+ax.set_xticks(ind)
+ax.set_xticklabels(('History', 'Paleo', 'Synthetic\nHistory', 'Synthetic\nPaleo', 'All-\nencompassing'))
+ax.tick_params(axis='both', labelsize=12)
+ax.legend(fontsize=14, loc='upper left')
+plt.show()
+
+zero_droughts = [i for i, e in enumerate(decadal_numbers) if e == 0]
 probability_decadal = 100*(1-len(zero_droughts)/len(decadal_numbers))
 
-zero_multi=[i for i, e in enumerate(multi_numbers) if e == 0]
+zero_multi = [i for i, e in enumerate(multi_numbers) if e == 0]
 probability_multi = 100*(1-len(zero_multi)/len(decadal_numbers))
 
 realizations_of_1000 = [sum(decadal_numbers[i:i+10]) for i in range(0, len(decadal_numbers), 10)]
