@@ -1,0 +1,15 @@
+--2022-07-20 13:08:11--  https://waterdata.usgs.gov/nwis/annual?site_no=09163500
+Resolving waterdata.usgs.gov (waterdata.usgs.gov)... 137.227.241.67, 137.227.252.11, 137.227.235.122, ...
+Connecting to waterdata.usgs.gov (waterdata.usgs.gov)|137.227.241.67|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://waterdata.usgs.gov/nwis/annual?referred_module=sw&site_no=09163500 [following]
+--2022-07-20 13:08:11--  https://waterdata.usgs.gov/nwis/annual?referred_module=sw&site_no=09163500
+Reusing existing connection to waterdata.usgs.gov:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘annual?site_no=09163500’
+
+annual?site_no=09163500           [<=>                                              ]       0  --.-KB/s               annual?site_no=09163500           [ <=>                                             ]  38.04K  --.-KB/s    in 0.02s   
+
+2022-07-20 13:08:11 (2.25 MB/s) - ‘annual?site_no=09163500’ saved [38957]
+

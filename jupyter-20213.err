@@ -1,0 +1,189 @@
+[W 2022-07-21 13:26:56.216 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-07-21 13:26:56.217 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-07-21 13:26:56.217 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-07-21 13:26:56.217 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-07-21 13:26:56.220 LabApp] JupyterLab extension loaded from /home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jupyterlab
+[I 2022-07-21 13:26:56.220 LabApp] JupyterLab application directory is /home/fs02/pmr82_0001/ah986/rival_framings/share/jupyter/lab
+[I 13:26:56.224 NotebookApp] Serving notebooks from local directory: /home/fs02/pmr82_0001/ah986/drought_classification
+[I 13:26:56.224 NotebookApp] Jupyter Notebook 6.4.5 is running at:
+[I 13:26:56.224 NotebookApp] http://localhost:18175/?token=74b501dd2007f4fb33b7312e68d90adbdac72ea749684143
+[I 13:26:56.224 NotebookApp]  or http://127.0.0.1:18175/?token=74b501dd2007f4fb33b7312e68d90adbdac72ea749684143
+[I 13:26:56.224 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:26:56.230 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/fs02/pmr82_0001/ah986/.local/share/jupyter/runtime/nbserver-2740902-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:18175/?token=74b501dd2007f4fb33b7312e68d90adbdac72ea749684143
+     or http://127.0.0.1:18175/?token=74b501dd2007f4fb33b7312e68d90adbdac72ea749684143
+[I 13:27:53.380 NotebookApp] 302 GET /?token=74b501dd2007f4fb33b7312e68d90adbdac72ea749684143 (::1) 0.270000ms
+[I 13:28:06.770 NotebookApp] Saving file at /drought_impacts_all_users_summary.ipynb
+[W 13:28:07.688 NotebookApp] Notebook drought_impacts_all_users_summary.ipynb is not trusted
+[W 13:28:07.753 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220721132655 (::1) 5.210000ms referer=http://localhost:8888/notebooks/drought_impacts_all_users_summary.ipynb
+[I 13:28:08.145 NotebookApp] Kernel started: 3f401a34-9152-42dd-afbb-3e9127392342, name: python3
+[I 13:30:08.946 NotebookApp] Saving file at /drought_impacts_all_users_summary.ipynb
+[I 13:32:09.163 NotebookApp] Saving file at /drought_impacts_all_users_summary.ipynb
+[I 13:38:09.332 NotebookApp] Saving file at /drought_impacts_all_users_summary.ipynb
+[I 13:40:43.195 NotebookApp] Creating new notebook in 
+[W 13:40:44.905 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220721132655 (::1) 2.300000ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 13:40:45.095 NotebookApp] Kernel started: 9844bcaf-6961-4708-a2a0-7fd232659333, name: python3
+[I 13:42:46.627 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 13:44:09.044 NotebookApp] Saving file at /drought_impacts_all_users_summary.ipynb
+[I 13:54:45.112 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 13:56:45.327 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 13:58:08.964 NotebookApp] Saving file at /drought_impacts_all_users_summary.ipynb
+[I 13:58:45.523 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:00:45.600 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:02:45.199 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:04:45.080 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:06:45.868 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:08:45.080 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:10:46.422 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:12:45.346 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:14:45.289 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:16:45.283 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/kernelbase.py", line 261, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/kernelbase.py", line 579, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/ipkernel.py", line 356, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/ipkernel.py", line 381, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 484, in rectify_completions
+    completions = list(completions)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1818, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1862, in _completions
+    full_text=full_text, cursor_line=cursor_line, cursor_pos=cursor_column)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 2030, in _complete
+    cursor_pos, cursor_line, full_text)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1374, in _jedi_matches
+    text[:offset], namespaces, column=cursor_column, line=cursor_line + 1)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jedi/api/__init__.py", line 726, in __init__
+    project=Project(Path.cwd()), **kwds)
+TypeError: __init__() got an unexpected keyword argument 'column'
+[I 14:18:45.220 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:20:45.250 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:22:45.526 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:24:45.292 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:26:08.812 NotebookApp] Saving file at /drought_impacts_all_users_summary.ipynb
+[I 14:26:45.397 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:28:45.420 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:30:08.794 NotebookApp] Saving file at /drought_impacts_all_users_summary.ipynb
+[I 14:30:45.427 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:32:45.346 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:34:08.779 NotebookApp] Saving file at /drought_impacts_all_users_summary.ipynb
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/kernelbase.py", line 261, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/kernelbase.py", line 579, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/ipkernel.py", line 356, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/ipykernel/ipkernel.py", line 381, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 484, in rectify_completions
+    completions = list(completions)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1818, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1862, in _completions
+    full_text=full_text, cursor_line=cursor_line, cursor_pos=cursor_column)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 2030, in _complete
+    cursor_pos, cursor_line, full_text)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/IPython/core/completer.py", line 1374, in _jedi_matches
+    text[:offset], namespaces, column=cursor_column, line=cursor_line + 1)
+  File "/home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jedi/api/__init__.py", line 726, in __init__
+    project=Project(Path.cwd()), **kwds)
+TypeError: __init__() got an unexpected keyword argument 'column'
+[I 14:34:45.534 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:36:08.988 NotebookApp] Saving file at /drought_impacts_all_users_summary.ipynb
+[I 14:36:45.358 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:40:46.936 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:42:46.351 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:44:45.272 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:46:45.360 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:48:45.209 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:50:45.844 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:52:45.934 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:54:46.027 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:56:45.194 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:58:45.096 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:00:45.892 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:02:45.172 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:04:45.142 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:16:45.207 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:18:46.713 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:20:45.124 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:22:45.207 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:24:45.169 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:26:45.143 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:28:45.175 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:30:45.166 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:32:45.130 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:34:45.067 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:36:45.079 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:38:45.056 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:40:45.731 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:42:45.008 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:44:45.117 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:46:45.047 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:48:45.018 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:50:45.045 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:52:45.125 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:54:45.054 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:56:44.993 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 15:58:45.018 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:00:45.048 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:02:45.757 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:06:45.030 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:08:45.048 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:10:44.982 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:12:45.985 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:14:45.920 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:16:45.383 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:18:45.374 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:20:45.130 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:22:45.028 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:24:46.934 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:26:45.181 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:28:45.129 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:30:45.169 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:32:45.130 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:34:48.174 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:38:46.058 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:40:45.159 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:42:46.074 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:44:45.120 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:46:45.101 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 16:50:45.107 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 17:18:45.094 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 17:53:21.803 NotebookApp] Starting buffering for 9844bcaf-6961-4708-a2a0-7fd232659333:e30f29261da648aeab178a2720a9f290
+[I 17:53:21.843 NotebookApp] Starting buffering for 3f401a34-9152-42dd-afbb-3e9127392342:d062107d85f04bdbac5af6a4e20e34be
+[I 17:53:24.652 NotebookApp] Restoring connection for 3f401a34-9152-42dd-afbb-3e9127392342:d062107d85f04bdbac5af6a4e20e34be
+[I 17:53:24.800 NotebookApp] Restoring connection for 9844bcaf-6961-4708-a2a0-7fd232659333:e30f29261da648aeab178a2720a9f290
+[W 17:56:24.653 NotebookApp] WebSocket ping timeout after 119896 ms.
+[W 17:56:24.801 NotebookApp] WebSocket ping timeout after 119952 ms.
+[I 17:56:29.655 NotebookApp] Starting buffering for 3f401a34-9152-42dd-afbb-3e9127392342:d062107d85f04bdbac5af6a4e20e34be
+[I 17:56:29.802 NotebookApp] Starting buffering for 9844bcaf-6961-4708-a2a0-7fd232659333:e30f29261da648aeab178a2720a9f290
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 20213 ON c0005 CANCELLED AT 2022-07-21T21:27:17 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 20213.0 ON c0005 CANCELLED AT 2022-07-21T21:27:17 DUE TO TIME LIMIT ***
+[C 21:27:17.460 NotebookApp] received signal 15, stopping
+srun: got SIGCONT
+srun: forcing job termination
