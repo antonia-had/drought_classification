@@ -1,0 +1,44 @@
+[W 2022-09-12 13:05:47.957 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-12 13:05:47.957 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-12 13:05:47.957 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-12 13:05:47.958 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-09-12 13:05:47.961 LabApp] JupyterLab extension loaded from /home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jupyterlab
+[I 2022-09-12 13:05:47.961 LabApp] JupyterLab application directory is /home/fs02/pmr82_0001/ah986/rival_framings/share/jupyter/lab
+[I 13:05:47.965 NotebookApp] Serving notebooks from local directory: /home/fs02/pmr82_0001/ah986/drought_classification
+[I 13:05:47.965 NotebookApp] Jupyter Notebook 6.4.5 is running at:
+[I 13:05:47.965 NotebookApp] http://localhost:18368/?token=5aa6c67584f873deb18f9e0ef5b99b1798e81cefc895f908
+[I 13:05:47.965 NotebookApp]  or http://127.0.0.1:18368/?token=5aa6c67584f873deb18f9e0ef5b99b1798e81cefc895f908
+[I 13:05:47.965 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:05:47.970 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/fs02/pmr82_0001/ah986/.local/share/jupyter/runtime/nbserver-3937621-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:18368/?token=5aa6c67584f873deb18f9e0ef5b99b1798e81cefc895f908
+     or http://127.0.0.1:18368/?token=5aa6c67584f873deb18f9e0ef5b99b1798e81cefc895f908
+[I 13:06:35.209 NotebookApp] 302 GET /?token=5aa6c67584f873deb18f9e0ef5b99b1798e81cefc895f908 (::1) 0.380000ms
+[W 13:06:46.401 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220912130545 (::1) 7.070000ms referer=http://localhost:8888/notebooks/hive_plots_drought_impacts-non_stationary.ipynb
+[I 13:06:46.568 NotebookApp] Kernel started: 8cb62460-b2ef-40d3-bc7b-9e97098162be, name: python3
+Exception in callback <TaskStepMethWrapper object at 0x152569095550>()
+handle: <Handle <TaskStepMethWrapper object at 0x152569095550>()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+[I 13:06:46.715 NotebookApp] Kernel started: 8bbcdf79-06d9-4ec3-9110-a995fd05cc6d, name: python3
+[W 13:06:46.783 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220912130545 (::1) 1.780000ms referer=http://localhost:8888/notebooks/hive_plots_drought_impacts.ipynb
+[I 13:28:46.940 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 13:30:48.994 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:14:46.835 NotebookApp] Saving file at /hive_plots_drought_impacts.ipynb
+[I 14:14:47.957 NotebookApp] Saving file at /hive_plots_drought_impacts-non_stationary.ipynb
+[I 15:02:29.831 NotebookApp] Starting buffering for 8cb62460-b2ef-40d3-bc7b-9e97098162be:05edc331788f48cd8c88e1e380bb06ec
+[I 15:02:29.872 NotebookApp] Starting buffering for 8bbcdf79-06d9-4ec3-9110-a995fd05cc6d:14b69eb669ac414c837d2eaf51371cc4
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 21957.0 ON c0002 CANCELLED AT 2022-09-12T21:05:51 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 21957 ON c0002 CANCELLED AT 2022-09-12T21:05:51 DUE TO TIME LIMIT ***
+[C 21:05:51.721 NotebookApp] received signal 15, stopping
+srun: got SIGCONT
+srun: forcing job termination
+[C 21:05:51.722 NotebookApp] received signal 15, stopping
+[I 21:05:51.723 NotebookApp] Shutting down 2 kernels
+[I 21:05:51.723 NotebookApp] Kernel shutdown: 8cb62460-b2ef-40d3-bc7b-9e97098162be

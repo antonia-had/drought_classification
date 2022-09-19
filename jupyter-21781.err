@@ -1,0 +1,24 @@
+[W 2022-09-01 11:53:28.641 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-01 11:53:28.641 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-01 11:53:28.641 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-01 11:53:28.641 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-09-01 11:53:28.645 LabApp] JupyterLab extension loaded from /home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jupyterlab
+[I 2022-09-01 11:53:28.645 LabApp] JupyterLab application directory is /home/fs02/pmr82_0001/ah986/rival_framings/share/jupyter/lab
+[I 11:53:28.650 NotebookApp] Serving notebooks from local directory: /home/fs02/pmr82_0001/ah986/drought_classification
+[I 11:53:28.651 NotebookApp] Jupyter Notebook 6.4.5 is running at:
+[I 11:53:28.651 NotebookApp] http://localhost:18131/?token=ff9a8c98b4ca4d2152cfb91a860aefcdb2cd8410b073dd9f
+[I 11:53:28.651 NotebookApp]  or http://127.0.0.1:18131/?token=ff9a8c98b4ca4d2152cfb91a860aefcdb2cd8410b073dd9f
+[I 11:53:28.651 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 11:53:28.658 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/fs02/pmr82_0001/ah986/.local/share/jupyter/runtime/nbserver-2339759-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:18131/?token=ff9a8c98b4ca4d2152cfb91a860aefcdb2cd8410b073dd9f
+     or http://127.0.0.1:18131/?token=ff9a8c98b4ca4d2152cfb91a860aefcdb2cd8410b073dd9f
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 21781 ON c0001 CANCELLED AT 2022-09-01T11:57:39 ***
+slurmstepd: error: *** STEP 21781.0 ON c0001 CANCELLED AT 2022-09-01T11:57:39 ***
+srun: forcing job termination
+[C 11:57:39.688 NotebookApp] received signal 15, stopping

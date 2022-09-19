@@ -1,0 +1,36 @@
+[W 2022-09-19 11:18:03.751 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-19 11:18:03.751 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-19 11:18:03.751 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-19 11:18:03.751 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-09-19 11:18:03.754 LabApp] JupyterLab extension loaded from /home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jupyterlab
+[I 2022-09-19 11:18:03.754 LabApp] JupyterLab application directory is /home/fs02/pmr82_0001/ah986/rival_framings/share/jupyter/lab
+[I 11:18:03.758 NotebookApp] Serving notebooks from local directory: /home/fs02/pmr82_0001/ah986/drought_classification
+[I 11:18:03.758 NotebookApp] Jupyter Notebook 6.4.5 is running at:
+[I 11:18:03.758 NotebookApp] http://localhost:18492/?token=d6d8ed5f488fa58d372d5455b10748fb9f35bf4914f1e17f
+[I 11:18:03.758 NotebookApp]  or http://127.0.0.1:18492/?token=d6d8ed5f488fa58d372d5455b10748fb9f35bf4914f1e17f
+[I 11:18:03.758 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 11:18:03.764 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/fs02/pmr82_0001/ah986/.local/share/jupyter/runtime/nbserver-3305342-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:18492/?token=d6d8ed5f488fa58d372d5455b10748fb9f35bf4914f1e17f
+     or http://127.0.0.1:18492/?token=d6d8ed5f488fa58d372d5455b10748fb9f35bf4914f1e17f
+[I 11:19:07.318 NotebookApp] 302 GET /?token=d6d8ed5f488fa58d372d5455b10748fb9f35bf4914f1e17f (::1) 0.450000ms
+[W 11:21:34.474 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220919111802 (::1) 7.300000ms referer=http://localhost:8888/notebooks/drought_impacts.ipynb
+[I 11:21:36.060 NotebookApp] Kernel started: 4e32d9f2-5bfd-4568-a6a9-c6a8e3940262, name: python3
+Exception in callback <TaskStepMethWrapper object at 0x1529fea532e8>()
+handle: <Handle <TaskStepMethWrapper object at 0x1529fea532e8>()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+[I 11:21:43.611 NotebookApp] Starting buffering for 4e32d9f2-5bfd-4568-a6a9-c6a8e3940262:758ed4e6988c4c40897801fa969441e6
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 22104 ON c0005 CANCELLED AT 2022-09-19T11:21:53 ***
+slurmstepd: error: *** STEP 22104.0 ON c0005 CANCELLED AT 2022-09-19T11:21:53 ***
+srun: forcing job termination
+[C 11:21:53.469 NotebookApp] received signal 15, stopping
+[I 11:21:53.471 NotebookApp] Shutting down 1 kernel
+[I 11:21:53.471 NotebookApp] Kernel shutdown: 4e32d9f2-5bfd-4568-a6a9-c6a8e3940262
