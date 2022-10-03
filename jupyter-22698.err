@@ -1,0 +1,35 @@
+[W 2022-10-03 11:12:22.101 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-10-03 11:12:22.101 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-10-03 11:12:22.101 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-10-03 11:12:22.101 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-10-03 11:12:22.104 LabApp] JupyterLab extension loaded from /home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jupyterlab
+[I 2022-10-03 11:12:22.104 LabApp] JupyterLab application directory is /home/fs02/pmr82_0001/ah986/rival_framings/share/jupyter/lab
+[I 11:12:22.109 NotebookApp] Serving notebooks from local directory: /home/fs02/pmr82_0001/ah986/drought_classification
+[I 11:12:22.109 NotebookApp] Jupyter Notebook 6.4.5 is running at:
+[I 11:12:22.109 NotebookApp] http://localhost:18119/?token=fd346692a914a10ff8e97c6428ec90d219396691fa0c3d1f
+[I 11:12:22.109 NotebookApp]  or http://127.0.0.1:18119/?token=fd346692a914a10ff8e97c6428ec90d219396691fa0c3d1f
+[I 11:12:22.109 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 11:12:22.116 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/fs02/pmr82_0001/ah986/.local/share/jupyter/runtime/nbserver-2940739-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:18119/?token=fd346692a914a10ff8e97c6428ec90d219396691fa0c3d1f
+     or http://127.0.0.1:18119/?token=fd346692a914a10ff8e97c6428ec90d219396691fa0c3d1f
+[I 11:12:59.310 NotebookApp] 302 GET /?token=fd346692a914a10ff8e97c6428ec90d219396691fa0c3d1f (::1) 0.380000ms
+[W 11:13:37.613 NotebookApp] 400 GET /api/contents/hive_plots_drought_impacts.ipynb?type=notebook&_=1664810017220 (::1): Unreadable Notebook: /home/fs02/pmr82_0001/ah986/drought_classification/hive_plots_drought_impacts.ipynb NotJSONError('Notebook does not appear to be JSON: \'{\\n "cells": [\\n  {\\n   "cell_type": "m...',)
+[W 11:13:37.613 NotebookApp] Unreadable Notebook: /home/fs02/pmr82_0001/ah986/drought_classification/hive_plots_drought_impacts.ipynb NotJSONError('Notebook does not appear to be JSON: \'{\\n "cells": [\\n  {\\n   "cell_type": "m...',)
+[W 11:13:37.613 NotebookApp] 400 GET /api/contents/hive_plots_drought_impacts.ipynb?type=notebook&_=1664810017220 (::1) 64.310000ms referer=http://localhost:8888/notebooks/hive_plots_drought_impacts.ipynb
+[W 11:13:37.634 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20221003111219 (::1) 20.130000ms referer=http://localhost:8888/notebooks/hive_plots_drought_impacts.ipynb
+[W 11:13:47.500 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20221003111219 (::1) 1.420000ms referer=http://localhost:8888/notebooks/hive_plots_drought_impacts-non_stationary.ipynb
+[I 11:13:48.535 NotebookApp] Kernel started: ca28f5cd-27a1-44b0-9b2c-eea08aa417ba, name: python3
+Exception in callback <TaskStepMethWrapper object at 0x14665658ca90>()
+handle: <Handle <TaskStepMethWrapper object at 0x14665658ca90>()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+[W 11:13:51.554 NotebookApp] 400 GET /api/contents/hive_plots_drought_impacts.ipynb?type=notebook&_=1664810031257 (::1): Unreadable Notebook: /home/fs02/pmr82_0001/ah986/drought_classification/hive_plots_drought_impacts.ipynb NotJSONError('Notebook does not appear to be JSON: \'{\\n "cells": [\\n  {\\n   "cell_type": "m...',)
+[W 11:13:51.554 NotebookApp] Unreadable Notebook: /home/fs02/pmr82_0001/ah986/drought_classification/hive_plots_drought_impacts.ipynb NotJSONError('Notebook does not appear to be JSON: \'{\\n "cells": [\\n  {\\n   "cell_type": "m...',)
+[W 11:13:51.554 NotebookApp] 400 GET /api/contents/hive_plots_drought_impacts.ipynb?type=notebook&_=1664810031257 (::1) 3.440000ms referer=http://localhost:8888/notebooks/hive_plots_drought_impacts.ipynb
+[W 11:13:51.602 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20221003111219 (::1) 1.010000ms referer=http://localhost:8888/notebooks/hive_plots_drought_impacts.ipynb

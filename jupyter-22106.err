@@ -26,3 +26,21 @@ Traceback (most recent call last):
   File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
     self._callback(*self._args)
 KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+[I 11:34:20.244 NotebookApp] Starting buffering for b467a83d-8da5-4a71-912d-0802d7b45890:b70231e48c4d486982fd9c181956f345
+[W 11:34:20.648 NotebookApp] Notebook streamflow_distribution_changes.ipynb is not trusted
+[W 11:34:20.704 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220919113048 (::1) 1.800000ms referer=http://localhost:8888/notebooks/streamflow_distribution_changes.ipynb
+[I 11:35:12.378 NotebookApp] Kernel interrupted: b467a83d-8da5-4a71-912d-0802d7b45890
+[I 11:36:22.796 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 11:38:22.633 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 11:40:21.715 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 11:42:21.861 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 11:44:27.369 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 11:46:28.517 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 11:50:25.216 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 12:02:05.844 NotebookApp] Starting buffering for b467a83d-8da5-4a71-912d-0802d7b45890:b097803d8f9640f988e119b6ed7a409d
+slurmstepd: error: *** STEP 22106.0 ON c0005 CANCELLED AT 2022-09-19T19:31:14 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 22106 ON c0005 CANCELLED AT 2022-09-19T19:31:14 DUE TO TIME LIMIT ***
+[C 19:31:14.545 NotebookApp] received signal 15, stopping
+srun: got SIGCONT
+srun: forcing job termination
