@@ -1,6 +1,7 @@
 import numpy as np
 import math
 from matplotlib import pyplot as plt
+from hmmlearn.hmm import GaussianHMM
 
 def drought_counts(timeseries, drought_threshold, decadal_window=11, multidecadal_window=35):
     drought_windows = [multidecadal_window, decadal_window]
@@ -127,3 +128,38 @@ def drought_identification_plots(timeseries, mean_flow, drought_threshold, decad
     ax2.set_xlim(ax.get_xlim())
     plt.show()
     return (total_drought_years)
+
+
+def fitHMM(TransformedQ):
+    # fit HMM
+    model = GaussianHMM(n_components=2, n_iter=1000).fit(np.reshape(TransformedQ, [len(TransformedQ), 1]))
+    hidden_states = model.predict(np.reshape(TransformedQ, [len(TransformedQ), 1]))
+    mus = np.array(model.means_)
+    sigmas = np.array(np.sqrt(np.array([np.diag(model.covars_[0]), np.diag(model.covars_[1])])))
+    P = np.array(model.transmat_)
+
+    # re-organize mus, sigmas and P so that first row is lower mean (if not already)
+    if mus[0] > mus[1]:
+        mus = np.flipud(mus)
+        sigmas = np.flipud(sigmas)
+        P = np.fliplr(np.flipud(P))
+        hidden_states = 1 - hidden_states
+
+    return hidden_states, mus, sigmas, P
+
+
+def fitParams(flows):
+    # create matrices to store the parameters
+    # each row is a different simulation
+    # columns are mu0, sigma0, mu1, sigma1, p00, p11
+    params = np.zeros([6])
+    hidden_states, mus, sigmas, P = fitHMM(np.log(flows))
+
+    params[0] = mus[0]
+    params[1] = sigmas[0]
+    params[2] = mus[1]
+    params[3] = sigmas[1]
+    params[4] = P[0, 0]
+    params[5] = P[1, 1]
+
+    return params
