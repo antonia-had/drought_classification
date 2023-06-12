@@ -1,0 +1,33 @@
+[W 2023-06-12 14:17:52.536 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-06-12 14:17:52.536 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-06-12 14:17:52.536 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-06-12 14:17:52.536 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-06-12 14:17:52.539 LabApp] JupyterLab extension loaded from /home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jupyterlab
+[I 2023-06-12 14:17:52.539 LabApp] JupyterLab application directory is /home/fs02/pmr82_0001/ah986/rival_framings/share/jupyter/lab
+[I 14:17:52.544 NotebookApp] Serving notebooks from local directory: /home/fs02/pmr82_0001/ah986/drought_classification
+[I 14:17:52.544 NotebookApp] Jupyter Notebook 6.4.5 is running at:
+[I 14:17:52.544 NotebookApp] http://localhost:18346/?token=2ff7dca123aaf59319b43ace8202875d8a9a37310127b711
+[I 14:17:52.544 NotebookApp]  or http://127.0.0.1:18346/?token=2ff7dca123aaf59319b43ace8202875d8a9a37310127b711
+[I 14:17:52.544 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 14:17:52.550 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/fs02/pmr82_0001/ah986/.local/share/jupyter/runtime/nbserver-1355386-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:18346/?token=2ff7dca123aaf59319b43ace8202875d8a9a37310127b711
+     or http://127.0.0.1:18346/?token=2ff7dca123aaf59319b43ace8202875d8a9a37310127b711
+[I 14:19:19.801 NotebookApp] 302 GET /?token=2ff7dca123aaf59319b43ace8202875d8a9a37310127b711 (::1) 0.390000ms
+[W 14:19:50.373 NotebookApp] delete /jupyter-44425.err
+[W 14:19:50.435 NotebookApp] delete /jupyter-44213.err
+[W 14:19:50.437 NotebookApp] delete /jupyter-44425.log
+[W 14:20:00.141 NotebookApp] delete /jupyter-44213.log
+[W 14:20:00.147 NotebookApp] delete /jupyter-44143.err
+[W 14:20:00.149 NotebookApp] delete /jupyter-44143.log
+[W 14:20:16.803 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230612141749 (::1) 10.630000ms referer=http://localhost:8888/notebooks/streamflow_distribution_changes.ipynb
+[I 14:20:16.805 NotebookApp] Kernel started: 3f75929b-fffa-402a-89db-ef5733369d33, name: python3
+Exception in callback <TaskStepMethWrapper object at 0x14ffb1522e10>()
+handle: <Handle <TaskStepMethWrapper object at 0x14ffb1522e10>()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>

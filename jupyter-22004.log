@@ -1,1 +1,0 @@
-FWDSSH='ssh -L8888:localhost:18938 ah986@hopper.cac.cornell.edu -N'
