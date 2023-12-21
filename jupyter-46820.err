@@ -1,0 +1,26 @@
+[W 2023-09-06 14:31:45.961 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-09-06 14:31:45.961 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-09-06 14:31:45.961 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-09-06 14:31:45.961 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-09-06 14:31:45.964 LabApp] JupyterLab extension loaded from /home/fs02/pmr82_0001/ah986/rival_framings/lib64/python3.6/site-packages/jupyterlab
+[I 2023-09-06 14:31:45.964 LabApp] JupyterLab application directory is /home/fs02/pmr82_0001/ah986/rival_framings/share/jupyter/lab
+[I 14:31:45.968 NotebookApp] Serving notebooks from local directory: /home/fs02/pmr82_0001/ah986/drought_classification
+[I 14:31:45.969 NotebookApp] Jupyter Notebook 6.4.5 is running at:
+[I 14:31:45.969 NotebookApp] http://localhost:18257/?token=b54cb170a279fb2bade8077afd03d52125ec0bef952491d5
+[I 14:31:45.969 NotebookApp]  or http://127.0.0.1:18257/?token=b54cb170a279fb2bade8077afd03d52125ec0bef952491d5
+[I 14:31:45.969 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 14:31:45.975 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/fs02/pmr82_0001/ah986/.local/share/jupyter/runtime/nbserver-2816799-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:18257/?token=b54cb170a279fb2bade8077afd03d52125ec0bef952491d5
+     or http://127.0.0.1:18257/?token=b54cb170a279fb2bade8077afd03d52125ec0bef952491d5
+[I 14:33:07.745 NotebookApp] 302 GET /?token=b54cb170a279fb2bade8077afd03d52125ec0bef952491d5 (::1) 0.380000ms
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 46820 ON c0017 CANCELLED AT 2023-09-06T14:33:34 ***
+slurmstepd: error: *** STEP 46820.0 ON c0017 CANCELLED AT 2023-09-06T14:33:34 ***
+[C 14:33:34.247 NotebookApp] received signal 15, stopping
+srun: forcing job termination
+[I 14:33:34.248 NotebookApp] Shutting down 0 kernels

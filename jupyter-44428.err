@@ -31,3 +31,112 @@ Traceback (most recent call last):
   File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
     self._callback(*self._args)
 KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+[I 14:54:04.410 NotebookApp] 302 GET /?token=2ff7dca123aaf59319b43ace8202875d8a9a37310127b711 (::1) 0.380000ms
+[I 14:55:46.694 NotebookApp] Saving file at /paleo_reference.py
+[I 14:56:16.704 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 14:58:17.414 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:02:17.406 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:02:47.055 NotebookApp] Saving file at /paleo_reference.py
+[I 15:03:54.602 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:03:54.725 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:a4ffbcb9b6ea40ed9453638109f3d81b
+[W 15:03:55.483 NotebookApp] Notebook streamflow_distribution_changes.ipynb is not trusted
+[W 15:03:55.502 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230612141749 (::1) 1.270000ms referer=http://localhost:8888/notebooks/streamflow_distribution_changes.ipynb
+[I 15:05:51.653 NotebookApp] Saving file at /paleo_reference.py
+[I 15:05:56.447 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[W 15:05:56.448 NotebookApp] Notebook streamflow_distribution_changes.ipynb is not trusted
+[I 15:06:32.532 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:25df8ab1160d4f92ad96d4bdb1f37600
+[I 15:06:35.127 NotebookApp] Saving file at /paleo_reference.py
+[W 15:06:43.772 NotebookApp] Notebook streamflow_distribution_changes.ipynb is not trusted
+[W 15:06:43.850 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230612141749 (::1) 1.700000ms referer=http://localhost:8888/notebooks/streamflow_distribution_changes.ipynb
+[I 15:06:55.305 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:06:55.923 NotebookApp] Kernel restarted: 3f75929b-fffa-402a-89db-ef5733369d33
+[I 15:06:56.014 NotebookApp] Restoring connection for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:06:56.453 NotebookApp] Replaying 3 buffered messages
+[I 15:08:45.841 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[W 15:08:45.842 NotebookApp] Notebook streamflow_distribution_changes.ipynb is not trusted
+[I 15:14:35.565 NotebookApp] Saving file at /paleo_reference.py
+[I 15:14:45.102 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[W 15:14:45.103 NotebookApp] Notebook streamflow_distribution_changes.ipynb is not trusted
+[I 15:14:57.873 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:14:58.420 NotebookApp] Kernel restarted: 3f75929b-fffa-402a-89db-ef5733369d33
+[I 15:14:58.577 NotebookApp] Restoring connection for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:14:58.985 NotebookApp] Replaying 3 buffered messages
+[I 15:16:45.564 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:23:33.846 NotebookApp] Saving file at /paleo_reference.py
+[I 15:24:21.461 NotebookApp] Saving file at /paleo_reference.py
+[I 15:24:27.548 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:24:27.998 NotebookApp] Kernel restarted: 3f75929b-fffa-402a-89db-ef5733369d33
+[I 15:24:28.101 NotebookApp] Restoring connection for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:24:28.532 NotebookApp] Replaying 3 buffered messages
+[I 15:24:45.581 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:24:59.638 NotebookApp] Saving file at /paleo_reference.py
+[I 15:25:05.489 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:25:05.906 NotebookApp] Kernel restarted: 3f75929b-fffa-402a-89db-ef5733369d33
+[I 15:25:05.999 NotebookApp] Restoring connection for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:25:06.502 NotebookApp] Replaying 3 buffered messages
+[I 15:26:45.541 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:26:53.027 NotebookApp] Saving file at /paleo_reference.py
+[I 15:26:58.848 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:26:59.300 NotebookApp] Kernel restarted: 3f75929b-fffa-402a-89db-ef5733369d33
+[I 15:26:59.491 NotebookApp] Restoring connection for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:26:59.813 NotebookApp] Replaying 3 buffered messages
+[I 15:27:12.471 NotebookApp] Saving file at /paleo_reference.py
+[I 15:27:17.944 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:27:18.395 NotebookApp] Kernel restarted: 3f75929b-fffa-402a-89db-ef5733369d33
+[I 15:27:18.541 NotebookApp] Restoring connection for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 15:27:19.045 NotebookApp] Replaying 3 buffered messages
+[I 15:28:45.540 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:30:44.904 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:32:44.938 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:34:44.948 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:36:44.956 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:38:44.955 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:40:44.966 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:42:45.103 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:44:45.703 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:46:45.659 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:48:44.933 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:50:45.615 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:50:55.054 NotebookApp] Kernel started: 1ffc95f8-d8af-457d-a931-ca611b8e0493, name: python3
+[W 15:50:55.468 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230612141749 (::1) 2.570000ms referer=http://localhost:8888/notebooks/hive_plots_drought_impacts-non_stationary-Copy.ipynb
+[W 15:53:35.736 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230612141749 (::1) 1.810000ms referer=http://localhost:8888/notebooks/hive_plots_drought_impacts-Copy.ipynb
+[I 15:53:36.371 NotebookApp] Kernel started: 188aee6a-8f9a-43e9-b180-7719433a8a59, name: python3
+[I 15:54:45.624 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:56:45.647 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 15:58:45.050 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:00:45.669 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:02:45.908 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:04:45.884 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:08:45.244 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:10:47.623 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:12:45.294 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:14:45.721 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:15:45.770 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 16:15:46.320 NotebookApp] Kernel restarted: 3f75929b-fffa-402a-89db-ef5733369d33
+[I 16:15:46.415 NotebookApp] Restoring connection for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 16:15:47.420 NotebookApp] Replaying 3 buffered messages
+[I 16:16:19.587 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 16:16:20.106 NotebookApp] Kernel restarted: 3f75929b-fffa-402a-89db-ef5733369d33
+[I 16:16:20.219 NotebookApp] Restoring connection for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+[I 16:16:20.724 NotebookApp] Replaying 3 buffered messages
+[I 16:16:44.855 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:18:45.528 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:30:45.366 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:32:45.056 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 16:34:44.927 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[W 16:34:59.716 NotebookApp] delete /paleo_thresholds.svg
+[W 16:34:59.721 NotebookApp] delete /drought_counts_histogram.svg
+[W 16:35:00.090 NotebookApp] delete /paleo_params.svg
+[I 16:36:45.535 NotebookApp] Saving file at /streamflow_distribution_changes.ipynb
+[I 17:14:58.517 NotebookApp] Starting buffering for 188aee6a-8f9a-43e9-b180-7719433a8a59:b94fb9c3674d48498d9995fcfbb1bdf8
+[I 17:14:58.733 NotebookApp] Starting buffering for 1ffc95f8-d8af-457d-a931-ca611b8e0493:1abbc03b30fe4320bea5b9c79963e811
+[I 17:14:58.974 NotebookApp] Starting buffering for 3f75929b-fffa-402a-89db-ef5733369d33:2c5262d0e718431e87d9c057c1546c81
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 44428.0 ON c0001 CANCELLED AT 2023-06-12T22:18:08 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 44428 ON c0001 CANCELLED AT 2023-06-12T22:18:08 DUE TO TIME LIMIT ***
+[C 22:18:08.858 NotebookApp] received signal 15, stopping
+srun: got SIGCONT
+srun: forcing job termination
+[C 22:18:08.862 NotebookApp] received signal 15, stopping
+[I 22:18:08.862 NotebookApp] Shutting down 3 kernels
+[I 22:18:08.864 NotebookApp] Kernel shutdown: 3f75929b-fffa-402a-89db-ef5733369d33

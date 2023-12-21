@@ -6,10 +6,10 @@ import scipy.stats as ss
 from matplotlib import pyplot as plt
 from utils import fitParams
 
-def makeFigureS8_ReconstructionParams():
+def fit_paleo_params():
 
     # load paleo data at Cisco
-    Paleo = pd.read_csv('../Qgen/Reconstruction/Cisco_Recon_v_Observed_v_Stateline.csv')
+    Paleo = pd.read_csv('./data/Reconstruction/Cisco_Recon_v_Observed_v_Stateline.csv')
     
     # re-scale Cisco data to estimate data at CO-UT state line
     factor = np.nanmean(Paleo['ObservedNaturalStateline']/Paleo['ObservedNaturalCisco'])
@@ -58,7 +58,13 @@ def makeFigureS8_ReconstructionParams():
                               'p00':noNoiseParams[:,4],'p11':noNoiseParams[:,5]})
     noNoiseParams['Ensemble'] = 'Reconstruction'
 
-    allParams = pd.concat([simParams,meanParams,noNoiseParams,trueParams])
+    allParams = pd.concat([simParams,meanParams,noNoiseParams,trueParams], ignore_index=True)
+    allParams['mu0'] = allParams['mu0'].div(trueParams['mu0']).round(2)
+    allParams['sigma0'] = allParams['sigma0'].div(trueParams['sigma0']).round(2)
+    allParams['mu1'] = allParams['mu1'].div(trueParams['mu1']).round(2)
+    allParams['sigma1'] = allParams['sigma1'].div(trueParams['sigma1']).round(2)
+    allParams['p00'] = allParams['p00'].sub(trueParams['p00']).round(2)
+    allParams['p11'] = allParams['p11'].sub(trueParams['p11']).round(2)
     
     print('here')
     allParams.to_csv('allParams_2.csv')
@@ -70,7 +76,7 @@ def makeFigureS8_ReconstructionParams():
     col = allParams.columns.tolist()
     
     fig = sns.pairplot(allParams,hue='Ensemble',corner=True)            
-    plt.savefig('FigureS8_ReconstructionParams.svg')
+    plt.savefig('paleo_params.svg')
     plt.clf()
     
     return None
